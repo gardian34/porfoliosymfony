@@ -1,0 +1,45 @@
+{% extends 'template.html.twig' %}
+
+{% block section %}
+     
+<!-- **************** CONTACT  *******************  -->
+    <section id="sectioncontact">
+        <h2> Contact  </h2> {#<!-- TITRE DE LA SECTION (CONTACT) -->#}
+      <hr class="hr-break-line"> {#<!-- BARE DE SOULIGNEMENT -->#}
+      <br>
+
+      <form>
+        <label>
+          <span>Nom et Prénom</span>
+          <input type="text" id="userName" name="userName" placeholder="Nom Prénom" />
+        </label>
+
+        <label>
+          <span>Adresse Email</span>
+          <input type="email" id="userEmail" name="userEmail" placeholder="exemple@domain.com" />
+        </label>
+
+        <label>
+          <span>Téléphone</span>
+          <input type="tel" id="userPhone" name="userPhone" placeholder="01 02 03 0 405" />
+        </label>
+
+        <label class="full-width">
+          <span>Votre messsage</span>
+          <textarea></textarea>
+        </label>
+
+        <input type="submit" id="submitInfo" name="submitInfo" value="envoyez" />
+      </form>
+
+        <div class="footer">
+            <div class="social">&#62220;</div>
+            <div class="social">&#62217;</div>
+            <div class="social">&#62223;</div>
+            <div class="social">&#62232;</div>
+       </div>
+
+  	</section>
+ 
+{% endblock %}
+

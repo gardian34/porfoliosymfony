@@ -1,0 +1,40 @@
+<!DOCTYPE html5>
+  <head>
+      <meta charset="utf-8">
+      <title>{% block title %}porfolio de charles-andre{% endblock %}</title>
+      <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" type="text/css" media="all" />
+  </head>
+<body>
+
+    
+    
+
+{# **************** NAVIGATION *******************  #}
+{% block header %}
+{% endblock %}
+
+    <!-- MENU  -->
+    <nav>
+      <ul>
+        <li><a href="http://localhost/porfolio/porfolio/web/app_dev.php"><span>Accueil</span></a></li>
+        <li><a href="http://localhost/porfolio/porfolio/web/app_dev.php/quisuisje"><span>Qui Suis Je</span></a></li>
+        <li><a href="http://localhost/porfolio/porfolio/web/app_dev.php/projet"><span>Projet</span></a></li>
+        <li><a href="http://localhost/porfolio/porfolio/web/app_dev.php/contact"><span>Contact</span></a></li>
+
+      </ul>
+    </nav>
+    
+    
+    {% block titre %}
+        
+    {% endblock %}
+    
+    
+
+
+    {% block section %}
+        
+    {% endblock %}
+     
+  </body>
+</html>
