@@ -1,0 +1,184 @@
+@import url("http://fonts.googleapis.com/css?family=Tangerine:400,700");
+@import url("http://fonts.googleapis.com/css?family=Lato:300");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow");
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url("http://fonts.googleapis.com/css?family=Lato:300");
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+html {
+  background-image: url(http://www.salttechno.com/wp-content/uploads/2015/08/web-designer-pune-background.jpg);
+  background-image: cover; }
+
+
+
+#titreprincipal {
+  font-family: 'Lobster', cursive;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  position: center; }
+
+h2 {
+  font-family: 'Tangerine', cursive;
+  font-size: 80px;
+  text-align: center; }
+
+h3 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 30px;
+  text-align: center; }
+
+.hr-break-line {
+  margin: 10px auto 30px;
+  padding: 0;
+  max-width: 512px;
+  border: 0;
+  border-top: solid 5px;
+  text-align: center;
+  border-color: #888; }
+
+.hr-break-line:after {
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -.8em;
+  padding: 0 .25em;
+  font-size: 2em;
+  color: #888;
+  background-color: #dedadd; }
+
+.paragraphe {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-align: center;
+  font-size: 25px; }
+
+/* **************** MENU DE MON PORTFOLIO ************** */
+nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  position: relative; }
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); }
+
+nav ul li {
+  display: inline-block; }
+
+nav ul li a {
+  padding: 18px;
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  display: block; }
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7); }
+
+/* **************  ARTICLE QUI SUIS JE ************* */
+#sectionquisuisje {
+  display: flex; }
+
+div > h2 {
+  text-align: center; }
+
+@media screen and (max-width: 840px) {
+  img {
+    display: none; } }
+/* **************  ARTICLE EXPERIENCE ************* */
+#sectionprojet .projetimg {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 150px; }
+  #sectionprojet .projetimg img {
+    width: 400px; }
+  #sectionprojet .projetimg .projet1 {
+    float: left; }
+
+
+
+.footer {
+  background-size: cover;
+  padding: 20px 0;
+  text-align: center; }
+
+.social {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  line-height: 70px;
+  font-family: Entypo;
+  font-size: 35px;
+  text-align: center;
+  color: black;
+  border-radius: 50%;
+  background: grey;
+  overflow: hidden;
+  transition: color .3s; }
+
+.social:hover {
+  color: red;
+  cursor: pointer; }
+
+form {
+  background-color: #d6d6d6;
+  padding: 1rem;
+  border-radius: .25rem; }
+  form * {
+    display: block;
+    font-size: 1.25rem; }
+  form label {
+    cursor: pointer;
+    margin-bottom: 1rem; }
+    form label span {
+      font: 2rem Lobster; }
+    @media screen and (max-width: 960px) {
+      form label {
+        width: 32%;
+        float: left;
+        margin-right: 2%; }
+        form label:nth-child(3n) {
+          margin-right: 0; }
+        form label.full-width {
+          width: 100%; } }
+  form input, form textarea {
+    width: 100%;
+    padding: .5rem 1rem;
+    border: 0 none;
+    line-height: 2;
+    transition: box-shadow .2s ease-in-out; }
+    form input:focus, form textarea:focus {
+      outline: 0 none;
+      box-shadow: 0 0 0.5rem #a3a3a3; }
+
+textarea {
+  min-height: 150px; }
+
+input[type="submit"] {
+  background: #ff006c;
+  color: #fff;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  border-radius: .25rem;
+  font-family: Lobster;
+  text-transform: capitalize;
+  font-size: 2rem;
+  line-height: normal; }
+  input[type="submit"]:hover, input[type="submit"]:focus {
+    background: #fff;
+    color: #ff006c;
+    box-shadow: none; }
+  input[type="submit"]:active {
+    -webkit-transform: scale(0.95); }
+
+/*# sourceMappingURL=main.css.map */

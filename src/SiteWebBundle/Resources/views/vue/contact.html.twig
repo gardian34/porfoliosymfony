@@ -2,43 +2,50 @@
 
 {% block section %}
      
-<!-- **************** CONTACT  *******************  -->
-    <section id="sectioncontact">
-        <h2> Contact  </h2> {#<!-- TITRE DE LA SECTION (CONTACT) -->#}
+   <section id="sectioncontact">
+			<h2> Contact  </h2> {#<!-- TITRE DE LA SECTION (CONTACT) -->#}
       <hr class="hr-break-line"> {#<!-- BARE DE SOULIGNEMENT -->#}
       <br>
 
-      <form>
+{#<!-- **************** FORMULAIRE CONTACT  *******************  -->#}
+      <form action="http://driad.fr/php/contact.php" id="contact" method="POST">
         <label>
           <span>Nom et Prénom</span>
-          <input type="text" id="userName" name="userName" placeholder="Nom Prénom" />
+          <input type="text" id="nom" name="nom" placeholder="Nom Prénom" />
+          <br/><span id="msg_nom"></span>
         </label>
 
         <label>
           <span>Adresse Email</span>
-          <input type="email" id="userEmail" name="userEmail" placeholder="exemple@domain.com" />
+          <input type="email" id="mail" name="email" placeholder="exemple@domain.com" />
+          <br/><span id="msg_email"></span>
         </label>
 
         <label>
           <span>Téléphone</span>
-          <input type="tel" id="userPhone" name="userPhone" placeholder="01 02 03 0 405" />
+          <input type="tel" id="telephone" name="telephone" placeholder="01 02 03 04 05" />
         </label>
 
         <label class="full-width">
-          <span>Votre messsage</span>
-          <textarea></textarea>
+          <span>Votre message</span>
+          <textarea id="message" name="message"></textarea>
+          <br/><span id="msg_message"></span>
         </label>
 
-        <input type="submit" id="submitInfo" name="submitInfo" value="envoyez" />
+        <input type="submit" id="envoyez" name="envoyez" value="envoyez" />
       </form>
+{#<!-- **************** FIN FORMULAIRE CONTACT  *******************  -->#}
 
+
+
+{#<!-- **************  LIEN DE RESEAUX SOCIAL ************** -->#}
         <div class="footer">
-            <div class="social">&#62220;</div>
+            <div class="social" href="https://www.facebook.com/charles0andre">&#62220;</div>
             <div class="social">&#62217;</div>
             <div class="social">&#62223;</div>
             <div class="social">&#62232;</div>
        </div>
-
+{#<!-- **************  FIN LIEN DE RESEAUX SOCIAL ************** -->#}
   	</section>
  
 {% endblock %}
